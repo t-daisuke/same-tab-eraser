@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Same Tab Window",
+  "version": "1.0.0",
+  "description": "重複タブを検出して管理するChrome拡張機能",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "src/background/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "src/popup/popup.html"
+  }
+} 
